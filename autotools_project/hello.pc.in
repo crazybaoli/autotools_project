@@ -1,0 +1,12 @@
+prefix=@prefix@   
+exec_prefix=@exec_prefix@   
+libdir=@libdir@       
+includedir=@includedir@/hello
+  
+  
+Name: hello   
+Description: A Makefile test  
+Version: @VERSION@           			   # 1.0,在configuer.ac写了
+Requires:  
+Libs: -L${libdir}/lib -ladd_sub      	   # 库libadd_sub.so路径  
+Cflags: -I${includedir}                    # 头文件路径 ${prefix}/include 
