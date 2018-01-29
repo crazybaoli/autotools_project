@@ -1,3 +1,5 @@
+ACLOCAL_AMFLAGS = -I m4
+
 # DIST_SUBDIRS 全局变量表示有哪些子目录需要编译Makefile.am  
 SUBDIRS = \
     src/add_sub \

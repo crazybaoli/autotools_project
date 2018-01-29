@@ -6,8 +6,11 @@ AC_INIT(hello, 1.0, baoliw@foxmail.com)
 AC_CONFIG_SRCDIR([src/main.c])
 AC_CONFIG_HEADERS([config.h])
 
+# 生成m4文件夹
+AC_CONFIG_MACRO_DIR([m4])
 # make dist时生成xxx.tar.bz2打包压缩格式，默认是xxx.tar.gz
 AM_INIT_AUTOMAKE([foreign dist-bzip2])
+# libtool
 AC_PROG_LIBTOOL
 LT_INIT
 
